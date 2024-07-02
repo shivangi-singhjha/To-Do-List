@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-list {
+    width: 400px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.todo-list h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+.todo-list input {
+    width: calc(100% - 40px);
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.todo-list input:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 5px rgba(255, 111, 97, 0.5);
+    outline: none;
+}
+
+.todo-list button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #ff6f61;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 5px 10px;
+}
+
+.todo-list button:hover {
+    background-color: #e95d55;
+    transform: scale(1.05);
+}
+
+.todo-list .filters button {
+    margin: 5px 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 50px;
+    padding: 10px 15px;
+}
+
+.todo-list .filters button:hover {
+    background-color: #ddd;
+}
+
+.todo-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.todo-list li.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.todo-list li div span {
+    cursor: pointer;
+    flex: 1;
+    text-align: left;
+    font-size: 1.1em;
+    width: 70%;
+}
+
+.todo-list li div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.todo-list li div button {
+    background-color: #ff4d4d;
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin-left: 10px;
+}
+
+.todo-list li div button:hover {
+    background-color: #cc0000;
+}
+
+.todo-list li:hover {
+    background-color: #f9f9f9;
+}
